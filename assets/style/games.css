@@ -1,0 +1,54 @@
+.games-create {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    animation-duration: 2s;
+    animation-name: openmenuidentity;
+}
+
+.games-create h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 1.9rem;
+    font-family: "Roboto-Light";
+}
+
+.games-create h3 {
+    color: white;
+    font-family: "Roboto-Light";
+    font-size: 3rem;
+}
+
+.btn-choice-games {
+    all: unset;
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 66px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Roboto-Medium";
+    transition: 0.2s;
+}
+
+.btn-choice-game-action-or-verite {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-choice-games:hover {
+    opacity: 60%;
+}
+
+.question {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px;
+}
+
+
+.btn-size-new {
+    padding: 7px 30px !important;
+}

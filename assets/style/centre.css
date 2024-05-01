@@ -1,0 +1,73 @@
+.center_texte {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenu {
+    text-align: center;
+}
+
+.Title_web_site {
+    color: white;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: "RobotoCondensed-Bold";
+
+}
+
+.texte_description {
+    color: rgba(255, 255, 255, 0.81);
+    letter-spacing: 2px;
+    font-family: "Roboto-Light";
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+
+}
+
+.texte_description strong {
+    font-weight: normal;
+}
+
+/* btn */
+
+.btn_launch_games {
+    all: unset;
+    cursor: pointer;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px;
+    margin: auto;
+    transition: 0.1s;
+
+}
+
+.btn_launch_games:hover {
+    opacity: 50%;
+}
+ 
+.container_btn_info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon_btn {
+    background-color: #306AFF;
+    width: 35px;
+    display: flex;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+
+.container_btn_info p {
+    font-family: "Roboto-Bold";
+    color: rgba(0, 0, 0, 0.901);
+    margin-right: 15px;
+}

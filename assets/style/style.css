@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#0B0121, #361138);
+}
+
+/* font */
+
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url(../fonts/static/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+/* color or bg */
+
+:root {
+    --color_h1_nav : #3A3A3A;
+}

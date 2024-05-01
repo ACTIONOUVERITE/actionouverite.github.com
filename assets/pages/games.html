@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action ou verité</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/centre.css">
+    <link rel="stylesheet" href="../style/dowload.css">
+    <link rel="stylesheet" href="../style/player.css">
+    <link rel="stylesheet" href="../style/categories.css">
+    <link rel="stylesheet" href="../style/games.css">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container_application_dowload" id="container_appli_menu_dowload">
+        <div class="application_dowload_info">
+            <div class="img_and_title_application">
+                <img src="../img/logo.png" alt="img_appli">
+    
+                <div class="appli_info">
+                    <p class="app_store_dowload_info_appli"><i class="fa-brands fa-app-store"></i> App Store</p>
+                    <h3 class="title_appli_dowload">Action ou verite</h3>
+                </div>
+            </div>
+
+            <div class="close" id="close_menu_appli"><i class="fa-solid fa-xmark"></i></div>
+    
+            <button class="btn_style_application">Telecharger l'application</button>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="left_nav">
+                <img class="img_nav" src="../img/logo.png" alt="logo">
+                <h1>Action ou verité</h1>
+            </div>
+
+            <div class="right_nav">
+                <a href="#">Blog</a>
+                <button>Telecharger l'application</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="center_texte" id="menu_identity">
+
+            <div class="contenu">
+
+                <div class="create_games_number_player">
+                    <h2 class="identity_title">Rentrez le nom des joueurs </h2>
+
+                    <div class="player_create_name_user">
+                        <div class="name_use">
+                            <label for="player1" class="player_style_name">Joueur 1</label>
+                        </div>
+
+                        <div class="input_player">
+
+                            <div class="input_element">
+
+                                <div class="player_icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+
+                                <input class="input_user" type="text" placeholder="Rentrez le nom du joeur 1" id="player1" name="player1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player_create_name_user">
+                        <div class="name_use">
+                            <label for="player2" class="player_style_name">Joueur 2</label>
+                        </div>
+
+                        <div class="input_player">
+
+                            <div class="input_element">
+
+                                <div class="player_icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+
+                                <input class="input_user" type="text" placeholder="Rentrez le nom du joeur 2" id="player2" name="player2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="message_identity">Telecharger l'application pour jouer a plus de 2 joueur</p>
+
+                    <button id="valid_champs" class="valid_form">Validé</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="choice_categories" style="display: none;" id="menu_categories">
+
+            <div class="container_choice">
+
+                <div class="element_center_choice_categories">
+                    <div class="btn_choice_categories">
+                        <button id="amis_categories">💙Amis</button>
+                        <button id="extreme_categories">🔥Extreme</button>
+                        <button id="couple_categories">💏Couple</button>
+                        <button id="couple_sexy_categories">💘Couple & sexy</button>
+                    </div>
+                </div>
+    
+                <div class="affiche_name_categories" id="categories_amis_games">
+                    <p class="name_categories">💙</p>
+                    <p class="name_categories">Amis</p>
+                    <button onclick="LaunchGames('Amis')" class="launch_games_btn">Jouer</button>
+                </div>
+
+                <div class="affiche_name_categories" id="categories_extreme_games" style="display: none;">
+                    <p class="name_categories">🔥</p>
+                    <p class="name_categories">Extreme</p>
+                    <button onclick="LaunchGames('Extreme')" class="launch_games_btn">Jouer</button>
+                </div>
+
+                <div class="affiche_name_categories" id="categories_couple_games" style="display: none;">
+                    <p class="name_categories">💏</p>
+                    <p class="name_categories">Couple</p>
+                    <button onclick="LaunchGames('Couple')" class="launch_games_btn">Jouer</button>
+                </div>
+
+                <div class="affiche_name_categories" id="categories_couple_sexy_games" style="display: none;">
+                    <p class="name_categories">💘</p>
+                    <p class="name_categories">Couple & sexy</p>
+                    <button onclick="LaunchGames('Couple_sexy')" class="launch_games_btn">Jouer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="games-create" id="container_choice">
+            <h2 id="name_player"></h2>
+            <h3>Action ou verité ?</h3>
+
+            <div class="btn-choice-game-action-or-verite">
+                <button class="btn-choice-games" id="action">Action</button>
+                <button class="btn-choice-games" id="veriter">Verité</button>
+            </div>
+        </div>
+
+
+        <div class="games-create" style="display: none;" id="container_question">
+            <h2 id="player_name"></h2>
+            <h3 class="question" id="questionR"></h3>
+            <button class="btn-choice-games btn-size-new" id="next-question">Suivant</button>
+        </div>
+
+    </main>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/question.js"></script>
+    <script src="../js/select.js"></script>
+</body>
+</html>
